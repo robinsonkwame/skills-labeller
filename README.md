@@ -1,8 +1,8 @@
 # skills-labeller
 A WDI system for labelling and extracting skills within job postings. Implements an entire intelligent system utilizing a front end, pulling down job postings and online learning all under constrained system resources (e.g. EC2 micro/small) for ease of public use. This readme will be modified as the system continues to see development.
 
-This fork is maintained under an MIT open source license. 
-All are welcome at our slack channel, https://kwamata.slack.com/app_redirect?channel=skill-labeler
+This fork is maintained under an MIT open source license.
+[Join our Slack Channel to learn more](https://kwamata.slack.com/app_redirect?channel=skill-labeler)
 
 ### How to Test
 #### ETL API unit test
