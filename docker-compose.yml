@@ -36,6 +36,18 @@ services:
         - "8080:8080"
     tty: true
 
+  dispatcher:
+    image: dispatcher:latest
+    build:
+        context: ./
+        dockerfile: ./dispatcher/Dockerfile
+    environment:
+        - API_PORT=8000
+        - API_DEBUG=1
+        - RUN_UNITTESTS_ONLY=false
+    ports:
+        - "8000:8000"
+
   redis:
     image: redis
 

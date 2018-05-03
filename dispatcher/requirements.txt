@@ -1,0 +1,4 @@
+gunicorn==19.7.1
+nameko==2.8.4
+hug==2.4.0
+pytest==3.4.0
