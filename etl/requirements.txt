@@ -5,8 +5,9 @@ boto
 falcon==1.2.0
 gunicorn==19.7.1
 werkzeug==0.12.2
-git+git://github.com/workforce-data-initiative/skills-utils.git
-
+#not open source any more :_(
+#git+git://github.com/workforce-data-initiative/skills-utils.git
+git+git://github.com/robinsonkwame/skills-utils.git
 # preprocessor related
 pandas==0.20.3
 spacy==1.9.0

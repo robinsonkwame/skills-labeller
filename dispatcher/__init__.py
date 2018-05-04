@@ -2,10 +2,8 @@ import hug
 import nameko
 import uuid
 
-# todo: move to utlis function
+# todo: move uuid.hex to utlis function?
 # see: https://stackoverflow.com/questions/36588126/uuid-is-not-json-serializable
-
-
 
 @hug.get('/getCandidateSkill', versions=1)
 def getCandidateSkill():
@@ -22,5 +20,5 @@ def getCandidateSkill():
 @hug.put('/putCandidateSkill', versions=1)
 def putCandidateSkill(uuid: hug.types.uuid, label: hug.types.boolean):
     """Accepts a candidate uuid, label"""
-    print(uuid, label)
-    return
+    return {"uuid": uuid.hex,
+            "label": label}
